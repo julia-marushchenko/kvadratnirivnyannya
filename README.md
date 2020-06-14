@@ -1,0 +1,2 @@
+# kvadratnirivnyannya
+рішення квадратних рівнянь
