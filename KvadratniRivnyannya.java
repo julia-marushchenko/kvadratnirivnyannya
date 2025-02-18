@@ -35,8 +35,13 @@ public class KvadratniRivnyannya {
         int stepin = 2;
         double D = Math.pow(b, stepin) - 4 * a * c;
         
-        double x1 = (-b + Math.sqrt(D))/2*a;
-        double x2 = (-b - Math.sqrt(D))/2*a;
+       if(D >= 0) {
+            x1 = (-b + Math.sqrt(D)) / 2 * a;
+            x2 = (-b - Math.sqrt(D)) / 2 * a;
+        } else {
+            x1 = (-b + Math.sqrt(-D)) / 2 * a;
+            x2 = (-b - Math.sqrt(-D)) / 2 * a;
+        }
         
         System.out.println("x1 = " + x1);
         System.out.println("x2 = " + x2);
